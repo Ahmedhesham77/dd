@@ -224,7 +224,7 @@ APP.globals = APP.globals || {},
                                         })()
                                 })
                         }
-                            , u = "5109045f914fbe4bd1fc9e3f9690739c"
+                            , u = "51f3c3e4a0e5235129e7989e5316a1c0"
                             , a = r.getParameterByName("user")
                             , f = r.getParameterByName("authHash");
                         f ? n.loginAuthHash(f, r.bind(o, this)) : u && n.duplicate(u, a, !0, r.bind(o, this))
