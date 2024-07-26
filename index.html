@@ -21,23 +21,7 @@
 
     <link rel="stylesheet" href="/plugins/wialon/interval/interval.wialon.min.css" />
     <link rel="stylesheet" href="css/style.min.css" />
-    <script>
-        var availableLanguages = null;
-        var documentationLink = "https://help.wialon.com/help/applications/en/user-guide/dashboard";
-        var is_white = null;
-        var APP_CONFIG = {};
 
-        function appPredefineVariables(app_langs, doc_link, is_whitelabeled, config) {
-            availableLanguages = app_langs;
-            documentationLink = config.help_url_link ? decodeURIComponent(config.help_url_link) : "https://help.wialon.com/help/applications/en/user-guide/dashboard"
-            is_white = is_whitelabeled;
-            APP_CONFIG = config;
-            document.title = decodeURIComponent(APP_CONFIG.alias || "Dashboard");
-        }
-
-
-
-    </script>
 </head>
 
 <body class="body">
