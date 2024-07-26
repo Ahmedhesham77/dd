@@ -1,0 +1,12 @@
+/**
+ * Interval Selection module for Wialon Apps
+ *
+ * @filename: interval.wialon
+ * @version 0.2.2
+ *
+ * @author Dzmitry Khadorkin <diha@gurtam.com>
+ * @copyright 2002-2023 Gurtam
+ * @license http://www.gnu.org/licenses/lgpl.html LGPL
+ **/
+
+@font-face{font-family:interval-wialon-font;src:url(interval.wialon.eot?-kjghkh);src:url(interval.wialon.eot?#iefix-kjghkh) format('embedded-opentype'),url(interval.wialon.woff?-kjghkh) format('woff'),url(interval.wialon.ttf?-kjghkh) format('truetype'),url(interval.wialon.svg?-kjghkh#icomoon) format('svg');font-weight:400;font-style:normal}.interval-wialon-container [class*=' icon-'],.interval-wialon-container [class^=icon-]{font-family:interval-wialon-font;speak:none;font-style:normal;font-weight:400;font-variant:normal;text-transform:none;line-height:1;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.interval-wialon-container .iw-select{float:left;margin-right:20px}.interval-wialon-container .iw-pickers{display:none;float:left;margin-right:20px;font-size:11px}.interval-wialon-container .iw-pickers input{margin:0;padding:0;width:120px;background:none;border:0;color:#000;text-align:center;font-size:11px}.interval-wialon-container .iw-pickers a{margin-left:10px;min-width:10px}.interval-wialon-container .iw-labels{display:none;float:left;margin-right:20px;font-size:12px}.interval-wialon-container .iw-labels a{display:block;float:right;text-decoration:none}.interval-wialon-container .iw-labels a:first-child{float:left}.interval-wialon-container .iw-labels i:hover{color:#ccc}.interval-wialon-container .iw-labels i.icon-left{margin-left:0}.interval-wialon-container .iw-labels i.icon-left:before{content:'\e60a'}.interval-wialon-container .iw-labels i.icon-right{margin-right:0}.interval-wialon-container .iw-labels i.icon-right:before{content:'\e609'}.interval-wialon-container .iw-labels .iw-label{display:inline-block;margin-top:2px}
