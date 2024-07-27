@@ -8,7 +8,7 @@ define("map", ["jquery", "leaflet", "webgis"], function (e, t) {
                 attribution: APP_CONFIG.alias_webgis || "Gurtam Maps",
                 minZoom: o.minZoom,
                 userId: i,
-                sessionId: "519c5241c9bae18d226a2f3cf623bfe2"
+                sessionId: "51ec40e4b4271850342b9e1450c52627"
             });
         n = t.map(o.mapBoxId, {
             minZoom: o.minZoom,
