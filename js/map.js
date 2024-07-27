@@ -2,13 +2,13 @@ define("map", ["jquery", "leaflet", "webgis"], function (e, t) {
     "use strict";
     function f() {
         var r = wialon.core.Session.getInstance().getBaseGisUrl()
-            , i = "zanzoraab"
+            , i = wialon.core.Session.getInstance().getCurrUser().getId()
             , s = wialon.core.Session.getInstance()
             , f = t.tileLayer.webGis(r, {
                 attribution: APP_CONFIG.alias_webgis || "Gurtam Maps",
                 minZoom: o.minZoom,
                 userId: i,
-                sessionId: "51ec40e4b4271850342b9e1450c52627"
+                sessionId: s.getId()
             });
         n = t.map(o.mapBoxId, {
             minZoom: o.minZoom,
