@@ -59,7 +59,7 @@ var APP = APP || {};
 APP.globals = APP.globals || {},
     require(["jquery", "underscore", "backbone", "dashboardUtil", "dashboardWidgets", "selectTime", "map"], function (e, t, n, r, i, s, o) {
         "use strict";
-        var u = decodeURIComponent(APP_CONFIG.alias || "Dashboard");
+        var u = "515a943382aa061ef350e1ccc2cbc003";
         e("#header .app-name").html(u),
             r.isTouch() ? e("body").addClass("touch") : e("body").addClass("no-touch");
         var a = n.View.extend({
