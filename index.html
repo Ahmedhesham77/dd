@@ -1,31 +1,26 @@
+<!DOCTYPE html>
 <html>
 
 <head>
     <meta charset="utf-8">
-    <title>Dashboard</title>
-    <meta name="description" content="">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta names="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
-    <link href="img/favicon.png" rel="shortcut icon" type="image/x-icon">
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta names="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <link href="img/favicon.png" rel="shortcut icon" type="image/x-icon" />
 
     <!-- <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet" /> -->
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/jquery-ui-1.10.3.custom.min.css" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/jquery-ui-1.10.3.custom.min.css" rel="stylesheet" />
 
-    <link href="css/jquery-ui-timepicker-addon.min.css" rel="stylesheet">
-    <link href="css/nv.d3.css" rel="stylesheet">
+    <link href="css/jquery-ui-timepicker-addon.min.css" rel="stylesheet" />
+    <link href="css/nv.d3.css" rel="stylesheet" />
 
-    <link rel="stylesheet" href="//apps.wialon.com/plugins/leaflet/leaflet/leaflet.css">
+    <link rel="stylesheet" href="//apps.wialon.com/plugins/leaflet/leaflet/leaflet.css" />
 
-    <link rel="stylesheet" href="/plugins/wialon/interval/interval.wialon.min.css">
-    <link rel="stylesheet" href="css/style.min.css">
-    <script type="text/javascript" async="" src="https://mc.yandex.ru/metrika/watch.js"></script>
-    <script type="text/javascript" async="" src="https://ssl.google-analytics.com/ga.js"></script>
-    <script type="text/javascript" async=""
-        src="https://www.googletagmanager.com/gtag/js?id=G-FXMDP4WHXJ&amp;l=dataLayer&amp;cx=c"></script>
-    <script type="text/javascript" async="" src="https://mc.yandex.ru/metrika/watch.js"></script>
-    <script async="" src="//www.googletagmanager.com/gtm.js?id=GTM-52V2TB"></script>
+    <link rel="stylesheet" href="/plugins/wialon/interval/interval.wialon.min.css" />
+    <link rel="stylesheet" href="css/style.min.css" />
     <script>
         var availableLanguages = null;
         var documentationLink = "https://help.wialon.com/help/applications/en/user-guide/dashboard";
@@ -65,1322 +60,310 @@
         }
 
     </script>
-    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="main"
-        src="js/main.js"></script>
-    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery"
-        src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="underscore"
-        src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.6.0/underscore-min.js"></script>
-    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="leaflet"
-        src="//apps.wialon.com/plugins/leaflet/leaflet/leaflet.js"></script>
-    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="backbone"
-        src="//cdnjs.cloudflare.com/ajax/libs/backbone.js/1.1.2/backbone-min.js"></script>
-    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="dashboardUtil"
-        src="js/dashboardUtil.js"></script>
-    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="map"
-        src="js/map.js"></script>
-    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_"
-        data-requiremodule="dashboardWidgets" src="js/dashboardWidgets.js"></script>
-    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="selectTime"
-        src="js/selectTime.js"></script>
-    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_"
-        data-requiremodule="jquery.ui.touch-punch" src="js/jquery.ui.touch-punch.js"></script>
-    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_"
-        data-requiremodule="jquery-ui-1.10.4.custom" src="js/jquery-ui-1.10.4.custom.js"></script>
-    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery.cookie"
-        src="js/jquery.cookie.js"></script>
-    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="webgis"
-        src="//apps.wialon.com/plugins/leaflet/webgis/webgis.leaflet.min.js"></script>
-    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="d3.v3.3.5.4"
-        src="js/d3.v3.3.5.4.js"></script>
-    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_"
-        data-requiremodule="jquery.tablesorter" src="js/jquery.tablesorter.js"></script>
-    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="wialon.interval"
-        src="//apps.wialon.com/plugins/wialon/interval/interval.wialon.min.js"></script>
-    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="nv.d3.1.7.1"
-        src="js/nv.d3.1.7.1.js"></script>
-    <script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="nv.d3.ext"
-        src="js/nv.d3.ext.js"></script>
 </head>
 
-<body class="body no-touch">
+<body class="body">
     <div id="header">
         <div class="header-wrapper">
             <div class="logo-wrapper left">
-                <img class="logo" alt="" src="img/logo.svg">
-                <span class="app-name">Dashboard</span>
+                <img class="logo" alt="" src="img/logo.svg" />
+                <span class="app-name"></span>
             </div>
 
-            <div id="header-buttons-wrapper" class="right">
-                <div class="left">
-                    <div class="add-units-btn disable"></div>
-                </div>
-                <div class="right">
-                    <div class="add-widget-btn"></div>
-                </div>
-            </div>
-            <div id="help-wrapper" class="right" style="">
-                <a id="a-help" target="_blank" href="https://help.wialon.com/help/applications/en/user-guide/dashboard">
+            <div id="header-buttons-wrapper" class="right"></div>
+            <div id="help-wrapper" class="right" style="display:none;">
+                <a id="a-help" target="_blank" href="#">
                     <div id="help"></div>
                 </a>
             </div>
             <div class="clear"></div>
         </div>
     </div>
-    <div id="header-gug" class=""></div>
+    <div id="header-gug"></div>
 
     <div id="main-container">
         <div id="body-content" class="dashboard-container">
             <div class="row">
                 <div class="col-sm-12">
-                    <div id="top-static-tables-container">
-                        <div class="panel panel-default dashboard-panel" id="dashboard-panel-c5">
-                            <div class="panel-heading">
-                                <div class="dummy-heading"></div>
-                                <div class="panel-icon-wrapper">
-                                    <span class="icon remove right"></span>
-                                    <span class="icon settings right" style="display: none;"></span>
-                                    <span class="icon chevron right chevron-hide"></span>
-                                    <span class="icon refresh right"></span>
-
-                                    <h3 class="panel-title title">Units</h3>
-                                </div>
-                            </div>
-                            <div class="panel-body-wrapper">
-                                <div class="gug"></div>
-                                <div class="panel-body scroll">
-                                    <div id="c5" class="col-sm-12 svg-wrapper">
-                                        <table id="table-c5"
-                                            class="col-sm-12 table table-hover table-striped tablesorter tablesorter-default">
-
-                                            <thead>
-                                                <tr class="tablesorter-headerRow">
-                                                    <th data-column="0" class="tablesorter-header sorter-false"
-                                                        tabindex="0" unselectable="on" style="user-select: none;">
-                                                        <div class="tablesorter-header-inner">
-                                                            <div class="left">#</div>
-                                                            <div class="sort-img left"></div>
-                                                            <div class="clear"></div>
-                                                        </div>
-                                                    </th>
-                                                    <th data-column="1" class="tablesorter-header" tabindex="0"
-                                                        unselectable="on" style="user-select: none;">
-                                                        <div class="tablesorter-header-inner">
-                                                            <div class="left"></div>
-                                                            <div class="sort-img left"></div>
-                                                            <div class="clear"></div>
-                                                        </div>
-                                                    </th>
-                                                    <th data-column="2" class="tablesorter-header sorter-false"
-                                                        tabindex="0" unselectable="on" style="user-select: none;">
-                                                        <div class="tablesorter-header-inner">
-                                                            <div class="left"></div>
-                                                            <div class="sort-img left"></div>
-                                                            <div class="clear"></div>
-                                                        </div>
-                                                    </th>
-                                                    <th data-column="3" class="tablesorter-header tablesorter-headerAsc"
-                                                        tabindex="0" unselectable="on" style="user-select: none;">
-                                                        <div class="tablesorter-header-inner">
-                                                            <div class="left">Name</div>
-                                                            <div class="sort-img left"></div>
-                                                            <div class="clear"></div>
-                                                        </div>
-                                                    </th>
-                                                    <th data-column="4" class="tablesorter-header" tabindex="0"
-                                                        unselectable="on" style="user-select: none;">
-                                                        <div class="tablesorter-header-inner">
-                                                            <div class="left">Location</div>
-                                                            <div class="sort-img left"></div>
-                                                            <div class="clear"></div>
-                                                        </div>
-                                                    </th>
-                                                    <th data-column="5" class="tablesorter-header" tabindex="0"
-                                                        unselectable="on" style="user-select: none;">
-                                                        <div class="tablesorter-header-inner">
-                                                            <div class="left">Last message</div>
-                                                            <div class="sort-img left"></div>
-                                                            <div class="clear"></div>
-                                                        </div>
-                                                    </th>
-                                                    <th data-column="6" class="tablesorter-header" tabindex="0"
-                                                        unselectable="on" style="user-select: none;">
-                                                        <div class="tablesorter-header-inner">
-                                                            <div class="left">Speed</div>
-                                                            <div class="sort-img left"></div>
-                                                            <div class="clear"></div>
-                                                        </div>
-                                                    </th>
-                                                </tr>
-                                            </thead>
-
-
-                                            <tbody>
-
-
-
-
-
-
-
-                                                <tr class="table-row" data-row-lat="60.676575" data-row-lon="17.1516766"
-                                                    data-row-iconsrc="https://hst-api.wialon.eu/avl_item_image/600413885/0/2268333347.png?b=32">
-
-                                                    <td class="number-td" data-raw="1">1</td>
-
-                                                    <td class="online-td" data-raw="0"><img
-                                                            src="./img/unconnection.png"></td>
-
-                                                    <td class="unit-image-td" data-raw="0"><img
-                                                            src="https://hst-api.wialon.eu/avl_item_image/600413885/0/2268333347.png?b=32">
-                                                    </td>
-
-                                                    <td data-raw="Zan-000001FMC003">Zan-000001FMC003</td>
-
-                                                    <td
-                                                        data-raw="Drottninggatan, 803 10 Gävle, Gävleborgs län, Sverige">
-                                                        Drottninggatan, 803 10 Gävle, Gävleborgs län, Sverige</td>
-
-                                                    <td data-raw="1722015016">26.07.2024 18:30:16</td>
-
-                                                    <td data-raw="0">0 km/h</td>
-
-                                                </tr>
-                                                <tr class="table-row" data-row-lat="60.62386" data-row-lon="16.7543033"
-                                                    data-row-iconsrc="https://hst-api.wialon.eu/avl_library_image/600000003/0/library/unit/L_27.png?b=32">
-
-                                                    <td class="number-td" data-raw="2">2</td>
-
-                                                    <td class="online-td" data-raw="0"><img
-                                                            src="./img/unconnection.png"></td>
-
-                                                    <td class="unit-image-td" data-raw="0"><img
-                                                            src="https://hst-api.wialon.eu/avl_library_image/600000003/0/library/unit/L_27.png?b=32">
-                                                    </td>
-
-                                                    <td data-raw="Zan-000002FMC003">Zan-000002FMC003</td>
-
-                                                    <td
-                                                        data-raw="Tallbacksvägen, 811 41 Sandviken, Gävleborgs län, Sverige">
-                                                        Tallbacksvägen, 811 41 Sandviken, Gävleborgs län, Sverige</td>
-
-                                                    <td data-raw="1716213262">20.05.2024 14:54:22</td>
-
-                                                    <td data-raw="0">0 km/h</td>
-
-                                                </tr>
-                                                <tr class="table-row" data-row-lat="60.6224466667"
-                                                    data-row-lon="16.75761"
-                                                    data-row-iconsrc="https://hst-api.wialon.eu/avl_item_image/600503596/0/2268333347.png?b=32">
-
-                                                    <td class="number-td" data-raw="3">3</td>
-
-                                                    <td class="online-td" data-raw="0"><img
-                                                            src="./img/unconnection.png"></td>
-
-                                                    <td class="unit-image-td" data-raw="0"><img
-                                                            src="https://hst-api.wialon.eu/avl_item_image/600503596/0/2268333347.png?b=32">
-                                                    </td>
-
-                                                    <td data-raw="ZanCamV300001">ZanCamV300001</td>
-
-                                                    <td
-                                                        data-raw="Gävlevägen, 811 36 Sandviken, Gävleborgs län, Sverige">
-                                                        Gävlevägen, 811 36 Sandviken, Gävleborgs län, Sverige</td>
-
-                                                    <td data-raw="1716213273">20.05.2024 14:54:33</td>
-
-                                                    <td data-raw="0">0 km/h</td>
-
-                                                </tr>
-                                                <tr class="table-row" data-row-lat="60.6222966667"
-                                                    data-row-lon="16.7400433333"
-                                                    data-row-iconsrc="https://hst-api.wialon.eu/avl_item_image/600503400/0/2393144456.png?b=32">
-
-                                                    <td class="number-td" data-raw="4">4</td>
-
-                                                    <td class="online-td" data-raw="0"><img
-                                                            src="./img/unconnection.png"></td>
-
-                                                    <td class="unit-image-td" data-raw="0"><img
-                                                            src="https://hst-api.wialon.eu/avl_item_image/600503400/0/2393144456.png?b=32">
-                                                    </td>
-
-                                                    <td data-raw="ZanCamV800001">ZanCamV800001</td>
-
-                                                    <td
-                                                        data-raw="Gävlevägen, 811 37 Sandviken, Gävleborgs län, Sverige">
-                                                        Gävlevägen, 811 37 Sandviken, Gävleborgs län, Sverige</td>
-
-                                                    <td data-raw="1722011312">26.07.2024 17:28:32</td>
-
-                                                    <td data-raw="56">56 km/h</td>
-
-                                                </tr>
-                                            </tbody>
-
-                                        </table>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="select-time-panel" class="date-time-content" style="">
-                        <div>
-                            <div class="interval-wialon-container">
-                                <table id="time-select">
-                                    <tbody>
-                                        <tr class="iw-select">
-                                            <td id="time_0" data-period="0"
-                                                class="time-template iw-period-btn period_0 active">Yesterday</td>
-                                            <td id="time_1" data-period="1"
-                                                class="time-template iw-period-btn period_1">Today</td>
-                                            <td id="time_2" data-period="2"
-                                                class="time-template iw-period-btn period_2">Week</td>
-                                            <td id="time_3" data-period="3"
-                                                class="time-template iw-period-btn period_3">Month</td>
-                                            <td id="time_4" data-period="4"
-                                                class="time-template iw-period-btn period_4">Custom</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                                <div class="iw-pickers" id="timepickers" style="display: none;">
-                                    <input type="input" class="datetime iw-from hasDatepicker"
-                                        id="date-from">&nbsp;–&nbsp;<input type="input"
-                                        class="datetime iw-to hasDatepicker" id="date-to">
-                                    <a href="#" id="change-time-btn" class="iw-time-btn">OK</a>
-                                </div>
-                                <div class="iw-labels time-info" style="display: block;">
-                                    <a href="#" class="iw-similar-btn" data-similar="past"><i class="icon-left"></i></a>
-                                    <a href="#" class="iw-similar-btn" data-similar="future"><i
-                                            class="icon-right"></i></a>
-                                    <span class="iw-label">26.07.2024</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    <div id="top-static-tables-container"></div>
+                    <div id="select-time-panel" class="date-time-content" style="display: none;"></div>
                 </div>
             </div>
 
             <div class="row">
-                <div id="left-container" class="col-sm-6 column ui-sortable">
-                    <div class="panel panel-default dashboard-panel" id="dashboard-panel-c8">
-                        <div class="panel-heading">
-                            <div class="dummy-heading"></div>
-                            <div class="panel-icon-wrapper">
-                                <span class="icon remove right"></span>
-                                <span class="icon settings right"></span>
-                                <span class="icon chevron right chevron-hide" style="display: none;"></span>
-                                <span class="icon refresh right" style="display: none;"></span>
-
-                                <div class="charts-type-wrapper">
-                                    <div data-chart-type="horizontal-bar-char"
-                                        class="icon icon-chart horizontal-bar-chart right disable-chart"></div>
-                                    <div data-chart-type="vertical-stacked-bar-chart"
-                                        class="icon icon-chart vertical-stacked-bar-chart right disable-chart"></div>
-                                    <div data-chart-type="vertical-bar-chart"
-                                        class="icon icon-chart vertical-bar-chart right disable-chart"></div>
-                                    <div data-chart-type="line-chart"
-                                        class="icon icon-chart line-chart right disable-chart"></div>
-                                    <div data-chart-type="pie-chart" class="icon icon-chart pie-chart right"></div>
-
-                                    <div class="clear"></div>
-                                </div>
-                                <h3 class="panel-title title">Mileage (top 10)</h3>
-                            </div>
-                        </div>
-                        <div class="panel-body-wrapper">
-                            <div class="gug"></div>
-                            <div class="panel-body">
-                                <div id="c8" class="col-sm-12 svg-wrapper">
-                                    <div><svg class="svg-class nvd3-svg">
-                                            <g class="nvd3 nv-wrap nv-pieChart" transform="translate(20,30)">
-                                                <g>
-                                                    <g class="nv-pieWrap nvd3-svg">
-                                                        <g class="nvd3 nv-wrap nv-pie nv-chart-9524"
-                                                            transform="translate(30,0)">
-                                                            <g>
-                                                                <g class="nv-pie" transform="translate(224,157.5)">
-                                                                    <g class="nv-slice" fill="#1f77b4" stroke="#1f77b4">
-                                                                        <path
-                                                                            d="M0,126A126,126 0 1,1 0,-126A126,126 0 1,1 0,126Z">
-                                                                        </path>
-                                                                    </g>
-                                                                </g>
-                                                                <g class="nv-pieLabels"
-                                                                    transform="translate(224,157.5)">
-                                                                    <g class="nv-label"
-                                                                        transform="translate(5.1282084714295414e-15,83.75)">
-                                                                        <rect rx="3" ry="3"
-                                                                            style="stroke: rgb(255, 255, 255); fill: rgb(255, 255, 255);">
-                                                                        </rect><text
-                                                                            style="text-anchor: middle; fill: rgb(0, 0, 0);">100%</text>
-                                                                    </g>
-                                                                </g>
-                                                            </g>
-                                                        </g>
-                                                    </g>
-                                                    <g class="nv-legendWrap nvd3-svg" transform="translate(0,-30)">
-                                                        <g class="nvd3 nv-legend" transform="translate(0,5)">
-                                                            <g transform="translate(385.9375,5)">
-                                                                <g class="nv-series" transform="translate(0,5)">
-                                                                    <circle class="nv-legend-symbol" r="5"
-                                                                        style="stroke-width: 2; fill: rgb(31, 119, 180); stroke: rgb(31, 119, 180);">
-                                                                    </circle><text text-anchor="start"
-                                                                        class="nv-legend-text" dy=".32em"
-                                                                        dx="8">ZanCamV800001</text>
-                                                                </g>
-                                                            </g>
-                                                        </g>
-                                                    </g>
-                                                </g>
-                                            </g>
-                                        </svg></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="panel panel-default dashboard-panel" id="dashboard-panel-c11">
-                        <div class="panel-heading">
-                            <div class="dummy-heading"></div>
-                            <div class="panel-icon-wrapper">
-                                <span class="icon remove right"></span>
-                                <span class="icon settings right"></span>
-                                <span class="icon chevron right chevron-hide" style="display: none;"></span>
-                                <span class="icon refresh right" style="display: none;"></span>
-
-                                <div class="charts-type-wrapper">
-                                    <div data-chart-type="horizontal-bar-char"
-                                        class="icon icon-chart horizontal-bar-chart right disable-chart"></div>
-                                    <div data-chart-type="vertical-stacked-bar-chart"
-                                        class="icon icon-chart vertical-stacked-bar-chart right disable-chart"></div>
-                                    <div data-chart-type="vertical-bar-chart"
-                                        class="icon icon-chart vertical-bar-chart right disable-chart"></div>
-                                    <div data-chart-type="line-chart"
-                                        class="icon icon-chart line-chart right disable-chart"></div>
-                                    <div data-chart-type="pie-chart" class="icon icon-chart pie-chart right"></div>
-
-                                    <div class="clear"></div>
-                                </div>
-                                <h3 class="panel-title title">Mileage (top 10)</h3>
-                            </div>
-                        </div>
-                        <div class="panel-body-wrapper">
-                            <div class="gug"></div>
-                            <div class="panel-body">
-                                <div id="c11" class="col-sm-12 svg-wrapper">
-                                    <div><svg class="svg-class nvd3-svg">
-                                            <g class="nvd3 nv-wrap nv-pieChart" transform="translate(20,30)">
-                                                <g>
-                                                    <g class="nv-pieWrap nvd3-svg">
-                                                        <g class="nvd3 nv-wrap nv-pie nv-chart-1066"
-                                                            transform="translate(30,0)">
-                                                            <g>
-                                                                <g class="nv-pie" transform="translate(224,157.5)">
-                                                                    <g class="nv-slice" fill="#1f77b4" stroke="#1f77b4">
-                                                                        <path
-                                                                            d="M0,126A126,126 0 1,1 0,-126A126,126 0 1,1 0,126Z">
-                                                                        </path>
-                                                                    </g>
-                                                                </g>
-                                                                <g class="nv-pieLabels"
-                                                                    transform="translate(224,157.5)">
-                                                                    <g class="nv-label"
-                                                                        transform="translate(5.1282084714295414e-15,83.75)">
-                                                                        <rect rx="3" ry="3"
-                                                                            style="stroke: rgb(255, 255, 255); fill: rgb(255, 255, 255);">
-                                                                        </rect><text
-                                                                            style="text-anchor: middle; fill: rgb(0, 0, 0);">100%</text>
-                                                                    </g>
-                                                                </g>
-                                                            </g>
-                                                        </g>
-                                                    </g>
-                                                    <g class="nv-legendWrap nvd3-svg" transform="translate(0,-30)">
-                                                        <g class="nvd3 nv-legend" transform="translate(0,5)">
-                                                            <g transform="translate(385.9375,5)">
-                                                                <g class="nv-series" transform="translate(0,5)">
-                                                                    <circle class="nv-legend-symbol" r="5"
-                                                                        style="stroke-width: 2; fill: rgb(31, 119, 180); stroke: rgb(31, 119, 180);">
-                                                                    </circle><text text-anchor="start"
-                                                                        class="nv-legend-text" dy=".32em"
-                                                                        dx="8">ZanCamV800001</text>
-                                                                </g>
-                                                            </g>
-                                                        </g>
-                                                    </g>
-                                                </g>
-                                            </g>
-                                        </svg></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="panel panel-default dashboard-panel" id="dashboard-panel-c14">
-                        <div class="panel-heading">
-                            <div class="dummy-heading"></div>
-                            <div class="panel-icon-wrapper">
-                                <span class="icon remove right"></span>
-                                <span class="icon settings right"></span>
-                                <span class="icon chevron right chevron-hide" style="display: none;"></span>
-                                <span class="icon refresh right" style="display: none;"></span>
-
-                                <div class="charts-type-wrapper">
-                                    <div data-chart-type="horizontal-bar-char"
-                                        class="icon icon-chart horizontal-bar-chart right disable-chart"></div>
-                                    <div data-chart-type="vertical-stacked-bar-chart"
-                                        class="icon icon-chart vertical-stacked-bar-chart right disable-chart"></div>
-                                    <div data-chart-type="vertical-bar-chart"
-                                        class="icon icon-chart vertical-bar-chart right disable-chart"></div>
-                                    <div data-chart-type="line-chart"
-                                        class="icon icon-chart line-chart right disable-chart"></div>
-                                    <div data-chart-type="pie-chart" class="icon icon-chart pie-chart right"></div>
-
-                                    <div class="clear"></div>
-                                </div>
-                                <h3 class="panel-title title">Engine hours (top 10)</h3>
-                            </div>
-                        </div>
-                        <div class="panel-body-wrapper">
-                            <div class="gug"></div>
-                            <div class="panel-body">
-                                <div id="c14" class="col-sm-12 svg-wrapper">
-                                    <div><svg class="svg-class nvd3-svg">
-                                            <g class="nvd3 nv-wrap nv-pieChart" transform="translate(20,30)">
-                                                <g>
-                                                    <g class="nv-pieWrap nvd3-svg">
-                                                        <g class="nvd3 nv-wrap nv-pie nv-chart-5251"
-                                                            transform="translate(30,0)">
-                                                            <g>
-                                                                <g class="nv-pie" transform="translate(224,157.5)">
-                                                                    <g class="nv-slice" fill="#1f77b4" stroke="#1f77b4">
-                                                                        <path
-                                                                            d="M0,126A126,126 0 1,1 0,-126A126,126 0 1,1 0,126Z">
-                                                                        </path>
-                                                                    </g>
-                                                                </g>
-                                                                <g class="nv-pieLabels"
-                                                                    transform="translate(224,157.5)">
-                                                                    <g class="nv-label"
-                                                                        transform="translate(5.1282084714295414e-15,83.75)">
-                                                                        <rect rx="3" ry="3"
-                                                                            style="stroke: rgb(255, 255, 255); fill: rgb(255, 255, 255);">
-                                                                        </rect><text
-                                                                            style="text-anchor: middle; fill: rgb(0, 0, 0);">100%</text>
-                                                                    </g>
-                                                                </g>
-                                                            </g>
-                                                        </g>
-                                                    </g>
-                                                    <g class="nv-legendWrap nvd3-svg" transform="translate(0,-30)">
-                                                        <g class="nvd3 nv-legend" transform="translate(0,5)">
-                                                            <g transform="translate(385.9375,5)">
-                                                                <g class="nv-series" transform="translate(0,5)">
-                                                                    <circle class="nv-legend-symbol" r="5"
-                                                                        style="stroke-width: 2; fill: rgb(31, 119, 180); stroke: rgb(31, 119, 180);">
-                                                                    </circle><text text-anchor="start"
-                                                                        class="nv-legend-text" dy=".32em"
-                                                                        dx="8">ZanCamV800001</text>
-                                                                </g>
-                                                            </g>
-                                                        </g>
-                                                    </g>
-                                                </g>
-                                            </g>
-                                        </svg></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div id="right-container" class="col-sm-6 column ui-sortable">
-                    <div class="panel panel-default dashboard-panel" id="dashboard-panel-c17">
-                        <div class="panel-heading">
-                            <div class="dummy-heading"></div>
-                            <div class="panel-icon-wrapper">
-                                <span class="icon remove right"></span>
-                                <span class="icon settings right"></span>
-                                <span class="icon chevron right chevron-hide" style="display: none;"></span>
-                                <span class="icon refresh right" style="display: none;"></span>
-
-                                <div class="charts-type-wrapper">
-                                    <div data-chart-type="horizontal-bar-char"
-                                        class="icon icon-chart horizontal-bar-chart right disable-chart"></div>
-                                    <div data-chart-type="vertical-stacked-bar-chart"
-                                        class="icon icon-chart vertical-stacked-bar-chart right disable-chart"></div>
-                                    <div data-chart-type="vertical-bar-chart"
-                                        class="icon icon-chart vertical-bar-chart right disable-chart"></div>
-                                    <div data-chart-type="line-chart"
-                                        class="icon icon-chart line-chart right disable-chart"></div>
-                                    <div data-chart-type="pie-chart" class="icon icon-chart pie-chart right"></div>
-
-                                    <div class="clear"></div>
-                                </div>
-                                <h3 class="panel-title title">Average speed - ZanCamV800001</h3>
-                            </div>
-                        </div>
-                        <div class="panel-body-wrapper">
-                            <div class="gug"></div>
-                            <div class="panel-body">
-                                <div id="c17" class="col-sm-12 svg-wrapper">
-                                    <div><svg class="svg-class nvd3-svg">
-                                            <g class="nvd3 nv-wrap nv-pieChart" transform="translate(20,30)">
-                                                <g>
-                                                    <g class="nv-pieWrap nvd3-svg">
-                                                        <g class="nvd3 nv-wrap nv-pie nv-chart-5987"
-                                                            transform="translate(30,0)">
-                                                            <g>
-                                                                <g class="nv-pie" transform="translate(224,157.5)">
-                                                                    <g class="nv-slice" fill="#1f77b4" stroke="#1f77b4">
-                                                                        <path
-                                                                            d="M0,126A126,126 0 1,1 0,-126A126,126 0 1,1 0,126Z">
-                                                                        </path>
-                                                                    </g>
-                                                                </g>
-                                                                <g class="nv-pieLabels"
-                                                                    transform="translate(224,157.5)">
-                                                                    <g class="nv-label"
-                                                                        transform="translate(5.1282084714295414e-15,83.75)">
-                                                                        <rect rx="3" ry="3"
-                                                                            style="stroke: rgb(255, 255, 255); fill: rgb(255, 255, 255);">
-                                                                        </rect><text
-                                                                            style="text-anchor: middle; fill: rgb(0, 0, 0);">100%</text>
-                                                                    </g>
-                                                                </g>
-                                                            </g>
-                                                        </g>
-                                                    </g>
-                                                    <g class="nv-legendWrap nvd3-svg" transform="translate(0,-30)">
-                                                        <g class="nvd3 nv-legend" transform="translate(0,5)">
-                                                            <g transform="translate(385.9375,5)">
-                                                                <g class="nv-series" transform="translate(0,5)">
-                                                                    <circle class="nv-legend-symbol" r="5"
-                                                                        style="stroke-width: 2; fill: rgb(31, 119, 180); stroke: rgb(31, 119, 180);">
-                                                                    </circle><text text-anchor="start"
-                                                                        class="nv-legend-text" dy=".32em"
-                                                                        dx="8">ZanCamV800001</text>
-                                                                </g>
-                                                            </g>
-                                                        </g>
-                                                    </g>
-                                                </g>
-                                            </g>
-                                        </svg></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="panel panel-default dashboard-panel" id="dashboard-panel-c20">
-                        <div class="panel-heading">
-                            <div class="dummy-heading"></div>
-                            <div class="panel-icon-wrapper">
-                                <span class="icon remove right"></span>
-                                <span class="icon settings right"></span>
-                                <span class="icon chevron right chevron-hide" style="display: none;"></span>
-                                <span class="icon refresh right" style="display: none;"></span>
-
-                                <div class="charts-type-wrapper">
-                                    <div data-chart-type="horizontal-bar-char"
-                                        class="icon icon-chart horizontal-bar-chart right disable-chart"></div>
-                                    <div data-chart-type="vertical-stacked-bar-chart"
-                                        class="icon icon-chart vertical-stacked-bar-chart right disable-chart"></div>
-                                    <div data-chart-type="vertical-bar-chart"
-                                        class="icon icon-chart vertical-bar-chart right disable-chart"></div>
-                                    <div data-chart-type="line-chart"
-                                        class="icon icon-chart line-chart right disable-chart"></div>
-                                    <div data-chart-type="pie-chart" class="icon icon-chart pie-chart right"></div>
-
-                                    <div class="clear"></div>
-                                </div>
-                                <h3 class="panel-title title">Fuel consumption by math (top 10)</h3>
-                            </div>
-                        </div>
-                        <div class="panel-body-wrapper">
-                            <div class="gug"></div>
-                            <div class="panel-body">
-                                <div id="c20" class="col-sm-12 svg-wrapper">
-                                    <div><svg class="svg-class nvd3-svg">
-                                            <g class="nvd3 nv-wrap nv-pieChart" transform="translate(20,30)">
-                                                <g>
-                                                    <g class="nv-pieWrap nvd3-svg">
-                                                        <g class="nvd3 nv-wrap nv-pie nv-chart-9624"
-                                                            transform="translate(30,0)">
-                                                            <g>
-                                                                <g class="nv-pie" transform="translate(224,157.5)">
-                                                                    <g class="nv-slice" fill="#1f77b4" stroke="#1f77b4">
-                                                                        <path
-                                                                            d="M0,126A126,126 0 1,1 0,-126A126,126 0 1,1 0,126Z">
-                                                                        </path>
-                                                                    </g>
-                                                                </g>
-                                                                <g class="nv-pieLabels"
-                                                                    transform="translate(224,157.5)">
-                                                                    <g class="nv-label"
-                                                                        transform="translate(5.1282084714295414e-15,83.75)">
-                                                                        <rect rx="3" ry="3"
-                                                                            style="stroke: rgb(255, 255, 255); fill: rgb(255, 255, 255);">
-                                                                        </rect><text
-                                                                            style="text-anchor: middle; fill: rgb(0, 0, 0);">100%</text>
-                                                                    </g>
-                                                                </g>
-                                                            </g>
-                                                        </g>
-                                                    </g>
-                                                    <g class="nv-legendWrap nvd3-svg" transform="translate(0,-30)">
-                                                        <g class="nvd3 nv-legend" transform="translate(0,5)">
-                                                            <g transform="translate(369.265625,5)">
-                                                                <g class="nv-series" transform="translate(0,5)">
-                                                                    <circle class="nv-legend-symbol" r="5"
-                                                                        style="stroke-width: 2; fill: rgb(31, 119, 180); stroke: rgb(31, 119, 180);">
-                                                                    </circle><text text-anchor="start"
-                                                                        class="nv-legend-text" dy=".32em"
-                                                                        dx="8">Zan-000001FMC003</text>
-                                                                </g>
-                                                            </g>
-                                                        </g>
-                                                    </g>
-                                                </g>
-                                            </g>
-                                        </svg></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="panel panel-default dashboard-panel" id="dashboard-panel-c23">
-                        <div class="panel-heading">
-                            <div class="dummy-heading"></div>
-                            <div class="panel-icon-wrapper">
-                                <div style="width: 45%; float: left; display: inline; position: relative" "="">
-            <div data-chart-type=" left-line-chart" class="icon icon-chart icon-chart-left line-chart"
-                                    style="position: absolute;"></div>
-                                <div data-chart-type="left-vertical-bar-chart"
-                                    class="icon icon-chart icon-chart-left vertical-bar-chart disable-chart"
-                                    style="position: absolute; left: 35px;"></div>
-                                <div class="panel-title title left-title" style="padding-left: 70px">Engine hours
-                                    (average)</div>
-                            </div>
-
-                            <div style="width: 55%; float: left; display: inline; position: relative">
-                                <div data-chart-type="right-line-chart"
-                                    class="icon icon-chart icon-chart-right line-chart disable-chart"
-                                    style="position: absolute;"></div>
-                                <div data-chart-type="right-vertical-bar-chart"
-                                    class="icon icon-chart icon-chart-right vertical-bar-chart"
-                                    style="position: absolute; left: 35px;"></div>
-
-                                <div class="icon remove right" style="position: absolute; right: 0"></div>
-                                <div class="icon settings right" style="position: absolute; right: 15px"></div>
-
-                                <div class="panel-title title right-title" style="padding: 0 70px 0 70px">Idling
-                                    (average)</div>
-                            </div>
-
-                            <div class="clear"></div>
-                        </div>
-                    </div>
-                    <div class="panel-body-wrapper">
-                        <div class="gug"></div>
-                        <div class="panel-body">
-                            <div id="c23" class="col-sm-12 svg-wrapper">
-                                <div><svg class="svg-class">
-                                        <g class="nvd3 nv-wrap nv-barPlusLine" transform="translate(65,50)">
-                                            <g>
-                                                <g class="nv-x nv-axis nvd3-svg" transform="translate(0,315)">
-                                                    <g class="nvd3 nv-wrap nv-axis">
-                                                        <g>
-                                                            <g class="tick" transform="translate(114.95,0)"
-                                                                style="opacity: 1;">
-                                                                <line y2="-315" x2="0"></line><text dy=".71em" y="7"
-                                                                    x="0" style="text-anchor: middle;">25.07</text>
-                                                            </g>
-                                                            <g class="tick" transform="translate(152.57000000000002,0)"
-                                                                style="opacity: 1;">
-                                                                <line y2="-315" x2="0"></line><text dy=".71em" y="7"
-                                                                    x="0" style="text-anchor: middle;"></text>
-                                                            </g>
-                                                            <g class="tick" transform="translate(190.19,0)"
-                                                                style="opacity: 1;">
-                                                                <line y2="-315" x2="0"></line><text dy=".71em" y="7"
-                                                                    x="0" style="text-anchor: middle;"></text>
-                                                            </g>
-                                                            <g class="tick" transform="translate(227.81,0)"
-                                                                style="opacity: 1;">
-                                                                <line y2="-315" x2="0"></line><text dy=".71em" y="7"
-                                                                    x="0" style="text-anchor: middle;"></text>
-                                                            </g>
-                                                            <g class="tick" transform="translate(265.43,0)"
-                                                                style="opacity: 1;">
-                                                                <line y2="-315" x2="0"></line><text dy=".71em" y="7"
-                                                                    x="0" style="text-anchor: middle;"></text>
-                                                            </g>
-                                                            <g class="tick" transform="translate(303.05,0)"
-                                                                style="opacity: 1;">
-                                                                <line y2="-315" x2="0"></line><text dy=".71em" y="7"
-                                                                    x="0" style="text-anchor: middle;">26.07</text>
-                                                            </g>
-                                                            <path class="domain" d="M114.95,0V0H303.05V0"></path><text
-                                                                class="nv-axislabel" text-anchor="middle" y="36"
-                                                                x="151.525"></text>
-                                                        </g>
-                                                    </g>
-                                                </g>
-                                                <g class="nv-y1 nv-axis nvd3-svg">
-                                                    <g class="nvd3 nv-wrap nv-axis">
-                                                        <g>
-                                                            <g class="tick zero" transform="translate(0,315)"
-                                                                style="opacity: 1;">
-                                                                <line x2="418" y2="0"></line><text dy=".32em" x="-3"
-                                                                    y="0" style="text-anchor: end;">0 s.</text>
-                                                            </g>
-                                                            <g class="tick" transform="translate(0,277.41050119331743)"
-                                                                style="opacity: 1;">
-                                                                <line x2="418" y2="0"></line><text dy=".32em" x="-3"
-                                                                    y="0" style="text-anchor: end;">01:40 m.</text>
-                                                            </g>
-                                                            <g class="tick" transform="translate(0,239.82100238663486)"
-                                                                style="opacity: 1;">
-                                                                <line x2="418" y2="0"></line><text dy=".32em" x="-3"
-                                                                    y="0" style="text-anchor: end;">03:20 m.</text>
-                                                            </g>
-                                                            <g class="tick" transform="translate(0,202.23150357995226)"
-                                                                style="opacity: 1;">
-                                                                <line x2="418" y2="0"></line><text dy=".32em" x="-3"
-                                                                    y="0" style="text-anchor: end;">05:00 m.</text>
-                                                            </g>
-                                                            <g class="tick" transform="translate(0,164.64200477326972)"
-                                                                style="opacity: 1;">
-                                                                <line x2="418" y2="0"></line><text dy=".32em" x="-3"
-                                                                    y="0" style="text-anchor: end;">06:40 m.</text>
-                                                            </g>
-                                                            <g class="tick" transform="translate(0,127.05250596658713)"
-                                                                style="opacity: 1;">
-                                                                <line x2="418" y2="0"></line><text dy=".32em" x="-3"
-                                                                    y="0" style="text-anchor: end;">08:20 m.</text>
-                                                            </g>
-                                                            <g class="tick" transform="translate(0,89.46300715990454)"
-                                                                style="opacity: 1;">
-                                                                <line x2="418" y2="0"></line><text dy=".32em" x="-3"
-                                                                    y="0" style="text-anchor: end;">10:00 m.</text>
-                                                            </g>
-                                                            <g class="tick" transform="translate(0,51.87350835322195)"
-                                                                style="opacity: 1;">
-                                                                <line x2="418" y2="0"></line><text dy=".32em" x="-3"
-                                                                    y="0" style="text-anchor: end;">11:40 m.</text>
-                                                            </g>
-                                                            <g class="tick" transform="translate(0,14.284009546539396)"
-                                                                style="opacity: 1;">
-                                                                <line x2="418" y2="0"></line><text dy=".32em" x="-3"
-                                                                    y="0" style="text-anchor: end;">13:20 m.</text>
-                                                            </g>
-                                                            <path class="domain" d="M0,0H0V315H0"></path><text
-                                                                class="nv-axislabel" transform="" y="-10" x="-3"
-                                                                style="text-anchor: end;">Time</text>
-                                                        </g>
-                                                    </g>
-                                                </g>
-                                                <g class="nv-y2 nv-axis nvd3-svg" transform="translate(418,0)"
-                                                    style="opacity: 1;">
-                                                    <g class="nvd3 nv-wrap nv-axis">
-                                                        <g>
-                                                            <g class="tick zero" transform="translate(0,315)"
-                                                                style="opacity: 1;">
-                                                                <line x2="0" y2="0"></line><text dy=".32em" x="3" y="0"
-                                                                    style="text-anchor: start;">0 s.</text>
-                                                            </g>
-                                                            <g class="tick" transform="translate(0,267.41691842900303)"
-                                                                style="opacity: 1;">
-                                                                <line x2="0" y2="0"></line><text dy=".32em" x="3" y="0"
-                                                                    style="text-anchor: start;">01:40 m.</text>
-                                                            </g>
-                                                            <g class="tick" transform="translate(0,219.83383685800607)"
-                                                                style="opacity: 1;">
-                                                                <line x2="0" y2="0"></line><text dy=".32em" x="3" y="0"
-                                                                    style="text-anchor: start;">03:20 m.</text>
-                                                            </g>
-                                                            <g class="tick" transform="translate(0,172.25075528700907)"
-                                                                style="opacity: 1;">
-                                                                <line x2="0" y2="0"></line><text dy=".32em" x="3" y="0"
-                                                                    style="text-anchor: start;">05:00 m.</text>
-                                                            </g>
-                                                            <g class="tick" transform="translate(0,124.66767371601209)"
-                                                                style="opacity: 1;">
-                                                                <line x2="0" y2="0"></line><text dy=".32em" x="3" y="0"
-                                                                    style="text-anchor: start;">06:40 m.</text>
-                                                            </g>
-                                                            <g class="tick" transform="translate(0,77.0845921450151)"
-                                                                style="opacity: 1;">
-                                                                <line x2="0" y2="0"></line><text dy=".32em" x="3" y="0"
-                                                                    style="text-anchor: start;">08:20 m.</text>
-                                                            </g>
-                                                            <g class="tick" transform="translate(0,29.501510574018127)"
-                                                                style="opacity: 1;">
-                                                                <line x2="0" y2="0"></line><text dy=".32em" x="3" y="0"
-                                                                    style="text-anchor: start;">10:00 m.</text>
-                                                            </g>
-                                                            <path class="domain" d="M0,0H0V315H0"></path><text
-                                                                class="nv-axislabel" transform="" y="-10"
-                                                                x="3">Time</text>
-                                                        </g>
-                                                    </g>
-                                                </g>
-                                                <g class="nv-barsWrap nvd3-svg">
-                                                    <g class="nvd3 nv-wrap nv-historicalBar-2176"
-                                                        transform="translate(0,0)">
-                                                        <defs>
-                                                            <clipPath id="nv-chart-clip-path-2176">
-                                                                <rect width="418" height="315"></rect>
-                                                            </clipPath>
-                                                        </defs>
-                                                        <g clip-path="url(#nv-chart-clip-path-2176)">
-                                                            <g class="nv-bars">
-                                                                <rect x="0" y="314" height="1"
-                                                                    transform="translate(10.450000000000003,0)"
-                                                                    fill="#1f77b4" class="nv-bar positive nv-bar-0-0"
-                                                                    width="188.1"></rect>
-                                                                <rect x="0" y="0" height="315"
-                                                                    transform="translate(219.45,0)" fill="#1f77b4"
-                                                                    class="nv-bar positive nv-bar-0-1" width="188.1">
-                                                                </rect>
-                                                            </g>
-                                                        </g>
-                                                    </g>
-                                                </g>
-                                                <g class="nv-linesWrap nvd3-svg">
-                                                    <g class="nvd3 nv-wrap nv-line" transform="translate(0,0)">
-                                                        <defs>
-                                                            <clipPath id="nv-edge-clip-72931">
-                                                                <rect width="418" height="315"></rect>
-                                                            </clipPath>
-                                                        </defs>
-                                                        <g clip-path="">
-                                                            <g class="nv-groups">
-                                                                <g class="nv-group nv-series-0"
-                                                                    style="stroke-opacity: 1; fill-opacity: 0.5; fill: rgb(255, 127, 14); stroke: rgb(255, 127, 14);">
-                                                                    <path class="nv-line" d="M114.95,315L303.05,0">
-                                                                    </path>
-                                                                </g>
-                                                            </g>
-                                                            <g class="nv-scatterWrap nvd3-svg" clip-path="">
-                                                                <g class="nvd3 nv-wrap nv-scatter nv-chart-72931"
-                                                                    transform="translate(0,0)">
-                                                                    <defs>
-                                                                        <clipPath id="nv-edge-clip-72931">
-                                                                            <rect width="418" height="315"></rect>
-                                                                        </clipPath>
-                                                                    </defs>
-                                                                    <g clip-path="">
-                                                                        <g class="nv-groups">
-                                                                            <g class="nv-group nv-series-0"
-                                                                                style="stroke-opacity: 1; fill-opacity: 0.5; stroke: rgb(255, 127, 14); fill: rgb(255, 127, 14);">
-                                                                                <path transform="translate(114.95,315)"
-                                                                                    d="M0,2.256758334191025A2.256758334191025,2.256758334191025 0 1,1 0,-2.256758334191025A2.256758334191025,2.256758334191025 0 1,1 0,2.256758334191025Z"
-                                                                                    class="nv-point nv-point-0"></path>
-                                                                                <path transform="translate(303.05,0)"
-                                                                                    d="M0,2.256758334191025A2.256758334191025,2.256758334191025 0 1,1 0,-2.256758334191025A2.256758334191025,2.256758334191025 0 1,1 0,2.256758334191025Z"
-                                                                                    class="nv-point nv-point-1"></path>
-                                                                            </g>
-                                                                        </g>
-                                                                        <g class="nv-point-paths">
-                                                                            <path
-                                                                                d="M94.94999999999999,315,104.94999999999999,325,428,325,428,314.9335593220159,232.7502484595508,177.1997515404492Z"
-                                                                                id="nv-path-0"
-                                                                                clip-path="url(#nv-clip-0)"></path>
-                                                                            <path
-                                                                                d="M-10,-10,-10,0.06644067798408493,185.2497515404492,137.8002484595508,323.05,0,313.05,-10Z"
-                                                                                id="nv-path-1"
-                                                                                clip-path="url(#nv-clip-1)"></path>
-                                                                            <path
-                                                                                d="M-10.000000000116415,315,94.94999999999999,315,232.7502484595508,177.1997515404492,185.2497515404492,137.8002484595508,-10,0.06644067796611353Z"
-                                                                                id="nv-path-2"
-                                                                                clip-path="url(#nv-clip-2)"></path>
-                                                                            <path
-                                                                                d="M185.2497515404492,137.8002484595508,232.7502484595508,177.1997515404492,428,314.9335593220339,428,0,323.05,0Z"
-                                                                                id="nv-path-3"
-                                                                                clip-path="url(#nv-clip-3)"></path>
-                                                                            <path
-                                                                                d="M-9.999999999999986,325,104.94999999995343,325,94.94999999999999,315,-9.999999999999986,315Z"
-                                                                                id="nv-path-4"
-                                                                                clip-path="url(#nv-clip-4)"></path>
-                                                                            <path
-                                                                                d="M428,-10,313.05000000004657,-10,323.05,0,428,0Z"
-                                                                                id="nv-path-5"
-                                                                                clip-path="url(#nv-clip-5)"></path>
-                                                                        </g>
-                                                                    </g>
-                                                                    <g id="nv-point-clips">
-                                                                        <clipPath id="nv-clip-0">
-                                                                            <circle cx="114.95000003674659"
-                                                                                cy="315.00000001777397" r="25"></circle>
-                                                                        </clipPath>
-                                                                        <clipPath id="nv-clip-1">
-                                                                            <circle cx="303.0500000158212"
-                                                                                cy="2.4373438740014384e-8" r="25">
-                                                                            </circle>
-                                                                        </clipPath>
-                                                                        <clipPath id="nv-clip-2">
-                                                                            <circle cx="94.95" cy="295" r="25"></circle>
-                                                                        </clipPath>
-                                                                        <clipPath id="nv-clip-3">
-                                                                            <circle cx="323.05" cy="20" r="25"></circle>
-                                                                        </clipPath>
-                                                                        <clipPath id="nv-clip-4">
-                                                                            <circle cx="94.95" cy="335" r="25"></circle>
-                                                                        </clipPath>
-                                                                        <clipPath id="nv-clip-5">
-                                                                            <circle cx="323.05" cy="-20" r="25">
-                                                                            </circle>
-                                                                        </clipPath>
-                                                                    </g>
-                                                                </g>
-                                                            </g>
-                                                        </g>
-                                                    </g>
-                                                </g>
-                                                <g class="nv-legendWrap nvd3-svg"
-                                                    transform="translate(139.33333333333334,-50)">
-                                                    <g class="nvd3 nv-legend" transform="translate(0,5)">
-                                                        <g transform="translate(3.5625,5)">
-                                                            <g class="nv-series" transform="translate(0,5)">
-                                                                <circle class="nv-legend-symbol" r="5"
-                                                                    style="stroke-width: 2; fill: rgb(255, 127, 14); stroke: rgb(255, 127, 14);">
-                                                                </circle><text text-anchor="start"
-                                                                    class="nv-legend-text" dy=".32em" dx="8">Engine
-                                                                    hours (average) - All units</text>
-                                                            </g>
-                                                            <g class="nv-series" transform="translate(0,25)">
-                                                                <circle class="nv-legend-symbol" r="5"
-                                                                    style="stroke-width: 2; fill: rgb(31, 119, 180); stroke: rgb(31, 119, 180);">
-                                                                </circle><text text-anchor="start"
-                                                                    class="nv-legend-text" dy=".32em" dx="8">Idling
-                                                                    (average) - All units</text>
-                                                            </g>
-                                                        </g>
-                                                    </g>
-                                                </g>
-                                            </g>
-                                        </g>
-                                    </svg></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <div id="left-container" class="col-sm-6 column"></div>
+                <div id="right-container" class="col-sm-6 column"></div>
             </div>
         </div>
     </div>
-    </div>
 
-    <div id="map-box" class="leaflet-container leaflet-touch leaflet-fade-anim leaflet-grab" tabindex="0"
-        style="visibility: hidden;">
-        <div class="leaflet-pane leaflet-map-pane" style="transform: translate3d(0px, 0px, 0px);">
-            <div class="leaflet-pane leaflet-tile-pane">
-                <div class="leaflet-layer" style="z-index: 1; opacity: 1;">
-                    <div class="leaflet-tile-container leaflet-zoom-animated"
-                        style="z-index: 18; transform: translate3d(0px, 0px, 0px) scale(1);"><img alt=""
-                            src="https://hst-api.wialon.eu/gis_render/21289_13773_2/600273209/tile.png?sid=51f97467a9223e2f16b03ac60910a4fd"
-                            class="leaflet-tile leaflet-tile-loaded"
-                            style="width: 256px; height: 256px; transform: translate3d(-82px, -35px, 0px); opacity: 1;"><img
-                            alt=""
-                            src="https://hst-api.wialon.eu/gis_render/21290_13773_2/600273209/tile.png?sid=51f97467a9223e2f16b03ac60910a4fd"
-                            class="leaflet-tile leaflet-tile-loaded"
-                            style="width: 256px; height: 256px; transform: translate3d(174px, -35px, 0px); opacity: 1;"><img
-                            alt=""
-                            src="https://hst-api.wialon.eu/gis_render/21289_13774_2/600273209/tile.png?sid=51f97467a9223e2f16b03ac60910a4fd"
-                            class="leaflet-tile leaflet-tile-loaded"
-                            style="width: 256px; height: 256px; transform: translate3d(-82px, 221px, 0px); opacity: 1;"><img
-                            alt=""
-                            src="https://hst-api.wialon.eu/gis_render/21290_13774_2/600273209/tile.png?sid=51f97467a9223e2f16b03ac60910a4fd"
-                            class="leaflet-tile leaflet-tile-loaded"
-                            style="width: 256px; height: 256px; transform: translate3d(174px, 221px, 0px); opacity: 1;">
-                    </div>
-                </div>
-            </div>
-            <div class="leaflet-pane leaflet-shadow-pane"></div>
-            <div class="leaflet-pane leaflet-overlay-pane"></div>
-            <div class="leaflet-pane leaflet-marker-pane"></div>
-            <div class="leaflet-pane leaflet-popup-pane"></div>
-            <div class="leaflet-proxy leaflet-zoom-animated"
-                style="transform: translate3d(5.45027e+06px, 3.52607e+06px, 0px) scale(16384);"></div>
-        </div>
-        <div class="leaflet-control-container">
-            <div class="leaflet-top leaflet-left">
-                <div class="leaflet-control-zoom leaflet-bar leaflet-control"><a class="leaflet-control-zoom-in"
-                        href="#" title="Zoom in">+</a><a class="leaflet-control-zoom-out" href="#"
-                        title="Zoom out">-</a></div>
-            </div>
-            <div class="leaflet-top leaflet-right"></div>
-            <div class="leaflet-bottom leaflet-left"></div>
-            <div class="leaflet-bottom leaflet-right">
-                <div class="leaflet-control-attribution leaflet-control"><a href="http://leafletjs.com"
-                        title="A JS library for interactive maps">Leaflet</a> | Gurtam Maps</div>
-            </div>
-        </div>
-    </div>
+    <div id="map-box"></div>
 
     <!-- Underscore templates-->
     <script type="text/template" id="time-select-template">
-        <div class="interval-wialon-container">
-            <table id="time-select">
-                <tr class="iw-select">
-                    <td id="time_0" data-period="0" class="time-template iw-period-btn period_0">{yesterday}</td>
-                    <td id="time_1" data-period="1" class="time-template iw-period-btn period_1">{today}</td>
-                    <td id="time_2" data-period="2" class="time-template iw-period-btn period_2">{week}</td>
-                    <td id="time_3" data-period="3" class="time-template iw-period-btn period_3">{month}</td>
-                    <td id="time_4" data-period="4" class="time-template iw-period-btn period_4">{custom}</td>
-                </tr>
-            </table>
-            <div class="iw-pickers" id="timepickers">
-                <input type="input" class="datetime iw-from" id="date-from"/>&nbsp;–&nbsp;<input type="input" class="datetime iw-to" id="date-to"/>
-                <a href="#" id="change-time-btn" class="iw-time-btn">{ok}</a>
+            <div class="interval-wialon-container">
+                <table id="time-select">
+                    <tr class="iw-select">
+                        <td id="time_0" data-period="0" class="time-template iw-period-btn period_0">{yesterday}</td>
+                        <td id="time_1" data-period="1" class="time-template iw-period-btn period_1">{today}</td>
+                        <td id="time_2" data-period="2" class="time-template iw-period-btn period_2">{week}</td>
+                        <td id="time_3" data-period="3" class="time-template iw-period-btn period_3">{month}</td>
+                        <td id="time_4" data-period="4" class="time-template iw-period-btn period_4">{custom}</td>
+                    </tr>
+                </table>
+                <div class="iw-pickers" id="timepickers">
+                    <input type="input" class="datetime iw-from" id="date-from"/>&nbsp;–&nbsp;<input type="input" class="datetime iw-to" id="date-to"/>
+                    <a href="#" id="change-time-btn" class="iw-time-btn">{ok}</a>
+                </div>
+                <div class="iw-labels time-info">
+                    <a href="#" class="iw-similar-btn" data-similar="past"><i class="icon-left"></i></a>
+                    <a href="#" class="iw-similar-btn" data-similar="future"><i class="icon-right"></i></a>
+                    <span class="iw-label"></span>
+                </div>
             </div>
-            <div class="iw-labels time-info">
-                <a href="#" class="iw-similar-btn" data-similar="past"><i class="icon-left"></i></a>
-                <a href="#" class="iw-similar-btn" data-similar="future"><i class="icon-right"></i></a>
-                <span class="iw-label"></span>
-            </div>
-        </div>
-    </script>
+        </script>
 
     <script type="text/template" id="widget-content-template">
-        <div class="panel-heading">
-            <div class="dummy-heading"></div>
-            <div class="panel-icon-wrapper">
-                <span class="icon remove right"></span>
-                <span class="icon settings right"></span>
-                <span class="icon chevron right"></span>
-                <span class="icon refresh right"></span>
+            <div class="panel-heading">
+                <div class="dummy-heading"></div>
+                <div class="panel-icon-wrapper">
+                    <span class="icon remove right"></span>
+                    <span class="icon settings right"></span>
+                    <span class="icon chevron right"></span>
+                    <span class="icon refresh right"></span>
+                </div>
             </div>
-        </div>
-        <div class="panel-body-wrapper">
-            <div class="gug"></div>
-            <div class="panel-body">
-                <div id="<%= cid %>" class="col-sm-12 svg-wrapper"></div>
+            <div class="panel-body-wrapper">
+                <div class="gug"></div>
+                <div class="panel-body">
+                    <div id="<%= cid %>" class="col-sm-12 svg-wrapper"></div>
+                </div>
             </div>
-        </div>
-    </script>
+        </script>
 
     <script type="text/template" id="plot-heading-template-add-on">
-        <div class="charts-type-wrapper">
-            <div data-chart-type="horizontal-bar-char" class="icon icon-chart horizontal-bar-chart right"></div>
-            <div data-chart-type="vertical-stacked-bar-chart" class="icon icon-chart vertical-stacked-bar-chart right"></div>
-            <div data-chart-type="vertical-bar-chart" class="icon icon-chart vertical-bar-chart right"></div>
-            <div data-chart-type="line-chart" class="icon icon-chart line-chart right"></div>
-            <div data-chart-type="pie-chart" class="icon icon-chart pie-chart right"></div>
+            <div class="charts-type-wrapper">
+                <div data-chart-type="horizontal-bar-char" class="icon icon-chart horizontal-bar-chart right"></div>
+                <div data-chart-type="vertical-stacked-bar-chart" class="icon icon-chart vertical-stacked-bar-chart right"></div>
+                <div data-chart-type="vertical-bar-chart" class="icon icon-chart vertical-bar-chart right"></div>
+                <div data-chart-type="line-chart" class="icon icon-chart line-chart right"></div>
+                <div data-chart-type="pie-chart" class="icon icon-chart pie-chart right"></div>
 
-            <div class="clear"></div>
-        </div>
-        <h3 class="panel-title title"></h3>
-    </script>
+                <div class="clear"></div>
+            </div>
+            <h3 class="panel-title title"></h3>
+        </script>
 
     <script type="text/template" id="table-heading-template-add-on">
-        <h3 class="panel-title title"></h3>
-    </script>
+            <h3 class="panel-title title"></h3>
+        </script>
 
     <script type="text/template" id="double-chart-heading-template-add-on">
-        <div style="width: 45%; float: left; display: inline; position: relative"">
-            <div data-chart-type="left-line-chart" class="icon icon-chart icon-chart-left line-chart" style="position: absolute;"></div>
-            <div data-chart-type="left-vertical-bar-chart" class="icon icon-chart icon-chart-left vertical-bar-chart" style="position: absolute; left: 35px;"></div>
-            <div class="panel-title title left-title" style="padding-left: 70px"></div>
-        </div>
+            <div style="width: 45%; float: left; display: inline; position: relative"">
+                <div data-chart-type="left-line-chart" class="icon icon-chart icon-chart-left line-chart" style="position: absolute;"></div>
+                <div data-chart-type="left-vertical-bar-chart" class="icon icon-chart icon-chart-left vertical-bar-chart" style="position: absolute; left: 35px;"></div>
+                <div class="panel-title title left-title" style="padding-left: 70px"></div>
+            </div>
 
-        <div style="width: 55%; float: left; display: inline; position: relative">
-            <div data-chart-type="right-line-chart" class="icon icon-chart icon-chart-right line-chart" style="position: absolute;"></div>
-            <div data-chart-type="right-vertical-bar-chart" class="icon icon-chart icon-chart-right vertical-bar-chart" style="position: absolute; left: 35px;"></div>
+            <div style="width: 55%; float: left; display: inline; position: relative">
+                <div data-chart-type="right-line-chart" class="icon icon-chart icon-chart-right line-chart" style="position: absolute;"></div>
+                <div data-chart-type="right-vertical-bar-chart" class="icon icon-chart icon-chart-right vertical-bar-chart" style="position: absolute; left: 35px;"></div>
 
-            <div class="icon remove right" style="position: absolute; right: 0"></div>
-            <div class="icon settings right" style="position: absolute; right: 15px"></div>
+                <div class="icon remove right" style="position: absolute; right: 0"></div>
+                <div class="icon settings right" style="position: absolute; right: 15px"></div>
 
-            <div class="panel-title title right-title" style="padding: 0 70px 0 70px"></div>
-        </div>
+                <div class="panel-title title right-title" style="padding: 0 70px 0 70px"></div>
+            </div>
 
-        <div class="clear"></div>
-    </script>
+            <div class="clear"></div>
+        </script>
 
     <script type="text/template" id="table-template">
-        <table id="<%= id %>" class="col-sm-12 table table-hover table-striped">
-            <%= thead %>
-            <%= tbody %>
-        </table>
-    </script>
+            <table id="<%= id %>" class="col-sm-12 table table-hover table-striped">
+                <%= thead %>
+                <%= tbody %>
+            </table>
+        </script>
 
     <script type="text/template" id="thead-template">
-        <thead>
-            <% _.each(columns, function(name) { %> <th><div class="left"><%= name %></div><div class="sort-img left"></div><div class="clear"></div></th> <% }); %>
-        </thead>
-    </script>
+            <thead>
+                <% _.each(columns, function(name) { %> <th><div class="left"><%= name %></div><div class="sort-img left"></div><div class="clear"></div></th> <% }); %>
+            </thead>
+        </script>
 
     <script type="text/template" id="tbody-template">
-        <tbody><%= rows %></tbody>
-    </script>
+            <tbody><%= rows %></tbody>
+        </script>
 
     <script type="text/template" id="number-td-template">
-        <td class="number-td" data-raw="<%= rawvalue %>"><%= value %></td>
-    </script>
+            <td class="number-td" data-raw="<%= rawvalue %>"><%= value %></td>
+        </script>
 
     <script type="text/template" id="text-td-template">
-        <td data-raw="<%= rawvalue %>"><%= value %></td>
-    </script>
+            <td data-raw="<%= rawvalue %>"><%= value %></td>
+        </script>
 
     <script type="text/template" id="image-td-template">
-        <td class="<%= css_class %>" data-raw="<%= rawvalue %>"><img src="<%= value %>"/></td>
-    </script>
+            <td class="<%= css_class %>" data-raw="<%= rawvalue %>"><img src="<%= value %>"/></td>
+        </script>
 
     <script type="text/template" id="row-template">
-        <tr class="table-row" data-row-lat="<%= rowMeta.lat %>" data-row-lon="<%= rowMeta.lon %>" data-row-iconsrc="<%= rowMeta.iconSrc %>" >
-            <% _.each(tds, function(td) { %> <%= td %> <% }); %>
-        </tr>
-    </script>
+            <tr class="table-row" data-row-lat="<%= rowMeta.lat %>" data-row-lon="<%= rowMeta.lon %>" data-row-iconsrc="<%= rowMeta.iconSrc %>" >
+                <% _.each(tds, function(td) { %> <%= td %> <% }); %>
+            </tr>
+        </script>
 
     <script type="text/template" id="add-btn-widget-template">
-        <button type="button" class="btn btn-primary navbar-btn navbar-right"><span class="glyphicon glyphicon-plus"></span></button>
-    </script>
+            <button type="button" class="btn btn-primary navbar-btn navbar-right"><span class="glyphicon glyphicon-plus"></span></button>
+        </script>
 
     <script type="text/template" id="add-widget-template">
-        <div class="dashboard-inner-modal-header">
-            <div id="graph-types" class="left">
-                <div data-graph-type="simple-graph" class="dashboard-nav-tabs">
-                    <span><%= charts_label %></span>
-                </div>
-                <div data-graph-type="multi-graph" class="dashboard-nav-tabs">
-                    <span><%= multicharts_label %></span>
-                </div>
-            </div>
-            <div class="dashboard-modal-close right"></div>
-            <div class="clear"></div>
-        </div>
-        <div class="dashboard-inner-modal-body">
-            <div id="simple-graph-tabs" class="ul-tab" style="display: none;">
-                <div id="simple-graph-select-avl-object" class="select-avl-object-wrapper left">
-                    <select class="select-avl-object"><%= select_avl_object_html %></select>
-                </div>
-
-                <div id="simple-graph-filter-wrapper" class="filter-wrapper left">
-                    <div class="show-units-wrapper left">
-                        <div class="show-units-label left">
-                            <label for="max-min-filter-count"><%= show_units_label %></label>
-                        </div>
-                        <div class="filter-count-wrapper right">
-                            <input id="max-min-filter-count" type="text" class="max-min-filter-count" value="<%= max_min.count %>">
-                        </div>
-                        <div class="clear"></div>
+            <div class="dashboard-inner-modal-header">
+                <div id="graph-types" class="left">
+                    <div data-graph-type="simple-graph" class="dashboard-nav-tabs">
+                        <span><%= charts_label %></span>
                     </div>
-                    <% if (max_min.is_max) { %>
-                        <div class="max-min-filter-sort-order filter-sort-order-a-z left"></div>
-                    <% } else { %>
-                        <div class="max-min-filter-sort-order filter-sort-order-z-a left"></div>
-                    <% } %>
-                    <div class="is-pass-zeroth-wrapper left">
-                        <input id="max-min-is-pass-zeroth" type="checkbox" name="is-pass-zeroth" class="max-min-checkbox-is-pass-zeroth" <% if (max_min.is_pass_zeroth) { %>checked="checked"<% } else { %><% } %>>
-                        <label for="max-min-is-pass-zeroth"><%= skip_zero_label %></label>
+                    <div data-graph-type="multi-graph" class="dashboard-nav-tabs">
+                        <span><%= multicharts_label %></span>
                     </div>
-                    <div class="clear"></div>
                 </div>
-                <div class="clear"></div>
-                <div class="select-simple-graph-server-type-wrapper"><%= widgets_html %></div>
+                <div class="dashboard-modal-close right"></div>
                 <div class="clear"></div>
             </div>
+            <div class="dashboard-inner-modal-body">
+                <div id="simple-graph-tabs" class="ul-tab" style="display: none;">
+                    <div id="simple-graph-select-avl-object" class="select-avl-object-wrapper left">
+                        <select class="select-avl-object"><%= select_avl_object_html %></select>
+                    </div>
 
-            <div id="multi-graph-tabs" class="ul-tab" style="display: none;">
-                <div id="multi-graph-select-avl-object" class="select-avl-object-wrapper left">
-                    <select class="select-avl-object"><%= select_avl_object_html %></select>
-                </div>
-
-                <div id="multi-graph-filter-wrapper" class="filter-wrapper left">
-                    <div class="av-total-wrapper left">
-                        <% if (av_total.is_total) { %>
-                            <div class="left">
-                                <div class="circle left"></div>
-                                <div class="av-is-total av-average-filter left"><%= average_label %></div>
-                                <div class="clear"></div>
+                    <div id="simple-graph-filter-wrapper" class="filter-wrapper left">
+                        <div class="show-units-wrapper left">
+                            <div class="show-units-label left">
+                                <label for="max-min-filter-count"><%= show_units_label %></label>
                             </div>
-                            <div style="margin: 0 5px 0 5px" class="left">/</div>
-                            <div class="left">
-                                <div class="circle active left"></div>
-                                <div class="av-is-total av-total-filter active left"><%= total_label %></div>
-                                <div class="clear"></div>
+                            <div class="filter-count-wrapper right">
+                                <input id="max-min-filter-count" type="text" class="max-min-filter-count" value="<%= max_min.count %>">
                             </div>
+                            <div class="clear"></div>
+                        </div>
+                        <% if (max_min.is_max) { %>
+                            <div class="max-min-filter-sort-order filter-sort-order-a-z left"></div>
                         <% } else { %>
-                            <div class="left">
-                                <div class="circle active left"></div>
-                                <div class="av-is-total av-average-filter active left"><%= average_label %></div>
-                                <div class="clear"></div>
-                            </div>
-                            <div style="margin: 0 5px 0 5px" class="left">/</div>
-                            <div class="left">
-                                <div class="circle left"></div>
-                                <div class="av-is-total av-total-filter left"><%= total_label %></div>
-                                <div class="clear"></div>
-                            </div>
+                            <div class="max-min-filter-sort-order filter-sort-order-z-a left"></div>
                         <% } %>
+                        <div class="is-pass-zeroth-wrapper left">
+                            <input id="max-min-is-pass-zeroth" type="checkbox" name="is-pass-zeroth" class="max-min-checkbox-is-pass-zeroth" <% if (max_min.is_pass_zeroth) { %>checked="checked"<% } else { %><% } %>>
+                            <label for="max-min-is-pass-zeroth"><%= skip_zero_label %></label>
+                        </div>
                         <div class="clear"></div>
                     </div>
+                    <div class="clear"></div>
+                    <div class="select-simple-graph-server-type-wrapper"><%= widgets_html %></div>
+                    <div class="clear"></div>
+                </div>
 
-                    <div class="is-pass-zeroth-wrapper left">
-                        <input id="av-total-is-pass-zeroth" type="checkbox" name="is-pass-zeroth" class="av-total-checkbox-is-pass-zeroth" <% if (av_total.is_pass_zeroth) { %>checked="checked"<% } else { %><% } %>>
-                        <label for="av-total-is-pass-zeroth"><%= skip_zero_label %></label>
+                <div id="multi-graph-tabs" class="ul-tab" style="display: none;">
+                    <div id="multi-graph-select-avl-object" class="select-avl-object-wrapper left">
+                        <select class="select-avl-object"><%= select_avl_object_html %></select>
+                    </div>
+
+                    <div id="multi-graph-filter-wrapper" class="filter-wrapper left">
+                        <div class="av-total-wrapper left">
+                            <% if (av_total.is_total) { %>
+                                <div class="left">
+                                    <div class="circle left"></div>
+                                    <div class="av-is-total av-average-filter left"><%= average_label %></div>
+                                    <div class="clear"></div>
+                                </div>
+                                <div style="margin: 0 5px 0 5px" class="left">/</div>
+                                <div class="left">
+                                    <div class="circle active left"></div>
+                                    <div class="av-is-total av-total-filter active left"><%= total_label %></div>
+                                    <div class="clear"></div>
+                                </div>
+                            <% } else { %>
+                                <div class="left">
+                                    <div class="circle active left"></div>
+                                    <div class="av-is-total av-average-filter active left"><%= average_label %></div>
+                                    <div class="clear"></div>
+                                </div>
+                                <div style="margin: 0 5px 0 5px" class="left">/</div>
+                                <div class="left">
+                                    <div class="circle left"></div>
+                                    <div class="av-is-total av-total-filter left"><%= total_label %></div>
+                                    <div class="clear"></div>
+                                </div>
+                            <% } %>
+                            <div class="clear"></div>
+                        </div>
+
+                        <div class="is-pass-zeroth-wrapper left">
+                            <input id="av-total-is-pass-zeroth" type="checkbox" name="is-pass-zeroth" class="av-total-checkbox-is-pass-zeroth" <% if (av_total.is_pass_zeroth) { %>checked="checked"<% } else { %><% } %>>
+                            <label for="av-total-is-pass-zeroth"><%= skip_zero_label %></label>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="clear"></div>
+
+                    <div id="multi-graph-select-types-wrapper">
+                        <div data-layout="first-multi-graph-layout" id="first-multi-graph-tab" class="multi-type-tabs left"><span></span></div>
+                        <div data-layout="second-multi-graph-layout" id="second-multi-graph-tab" class="multi-type-tabs left"><span></span></div>
+                        <div class="clear"></div>
+
+                        <div id="first-multi-graph-layout" class="multi-graph-layout">
+                            <div class=""><%= multi_widgets_html %></div>
+                        </div>
+                        <div id="second-multi-graph-layout" class="multi-graph-layout">
+                            <div class=""><%= multi_widgets_html %></div>
+                        </div>
+                        <div class="clear"></div>
                     </div>
                     <div class="clear"></div>
                 </div>
-                <div class="clear"></div>
-
-                <div id="multi-graph-select-types-wrapper">
-                    <div data-layout="first-multi-graph-layout" id="first-multi-graph-tab" class="multi-type-tabs left"><span></span></div>
-                    <div data-layout="second-multi-graph-layout" id="second-multi-graph-tab" class="multi-type-tabs left"><span></span></div>
-                    <div class="clear"></div>
-
-                    <div id="first-multi-graph-layout" class="multi-graph-layout">
-                        <div class=""><%= multi_widgets_html %></div>
-                    </div>
-                    <div id="second-multi-graph-layout" class="multi-graph-layout">
-                        <div class=""><%= multi_widgets_html %></div>
-                    </div>
-                    <div class="clear"></div>
+            </div>
+            <div class="dashboard-inner-modal-bottom">
+                <div class="btn-wrapper right">
+                    <div class="cancel left"><%= cancel_label %></div>
+                    <div class="ok right">OK</div>
                 </div>
                 <div class="clear"></div>
             </div>
-        </div>
-        <div class="dashboard-inner-modal-bottom">
-            <div class="btn-wrapper right">
-                <div class="cancel left"><%= cancel_label %></div>
-                <div class="ok right">OK</div>
-            </div>
-            <div class="clear"></div>
-        </div>
-    </script>
+        </script>
 
     <script type="text/template" id="widgets-template">
-        <% _.each(widgets_data, function(widget, i) { %>
-            <div class="left">
-                <div style="position: relative">
-                    <% if (i == index) { %>
-                        <% if (widget.sub_widgets) { %>
-                            <div data-server-type="<%= widget.value %>" class="select-server-type active select-sub-widgets"><span><%= widget.title %></span></div>
+            <% _.each(widgets_data, function(widget, i) { %>
+                <div class="left">
+                    <div style="position: relative">
+                        <% if (i == index) { %>
+                            <% if (widget.sub_widgets) { %>
+                                <div data-server-type="<%= widget.value %>" class="select-server-type active select-sub-widgets"><span><%= widget.title %></span></div>
+                            <% } else { %>
+                                <div data-server-type="<%= widget.value %>" class="select-server-type active"><span><%= widget.title %></span></div>
+                            <% } %>
                         <% } else { %>
-                            <div data-server-type="<%= widget.value %>" class="select-server-type active"><span><%= widget.title %></span></div>
+                            <% if (widget.sub_widgets) { %>
+                                <div data-server-type="<%= widget.value %>" class="select-server-type select-sub-widgets">
+                                    <span><%= widget.title %></span>
+                                </div>
+                            <% } else { %>
+                                <div data-server-type="<%= widget.value %>" class="select-server-type"><span><%= widget.title %></span></div>
+                            <% } %>
                         <% } %>
-                    <% } else { %>
                         <% if (widget.sub_widgets) { %>
-                            <div data-server-type="<%= widget.value %>" class="select-server-type select-sub-widgets">
-                                <span><%= widget.title %></span>
+                            <div class="sub-widgets-popup" style="display: none">
+                                <% _.each(widget.sub_widgets.templates, function(sub_widget, sub_index) { %>
+                                    <div data-title="<%= sub_widget.title %>" data-parent-server-type="<%= widget.value %>" data-server-type="<%= sub_widget.server_type %>" class="select-sub-widget"><%= sub_widget.postfix %></div>
+                                <% }); %>
                             </div>
-                        <% } else { %>
-                            <div data-server-type="<%= widget.value %>" class="select-server-type"><span><%= widget.title %></span></div>
                         <% } %>
-                    <% } %>
-                    <% if (widget.sub_widgets) { %>
-                        <div class="sub-widgets-popup" style="display: none">
-                            <% _.each(widget.sub_widgets.templates, function(sub_widget, sub_index) { %>
-                                <div data-title="<%= sub_widget.title %>" data-parent-server-type="<%= widget.value %>" data-server-type="<%= sub_widget.server_type %>" class="select-sub-widget"><%= sub_widget.postfix %></div>
-                            <% }); %>
-                        </div>
-                    <% } %>
-                </div>
-             </div>
-        <% }); %>
-    </script>
+                    </div>
+                 </div>
+            <% }); %>
+        </script>
 
     <script type="text/template" id="options-template">
-        <% _.each(options, function(option) { %> <option value="<%= option.value %>"><%= option.title %></option> <% }); %>
-    </script>
+            <% _.each(options, function(option) { %> <option value="<%= option.value %>"><%= option.title %></option> <% }); %>
+        </script>
     <!-- End underscore templates -->
 
     <!-- Google Tag Manager -->
@@ -1433,126 +416,8 @@
     </noscript>
     <!-- /Yandex.Metrika counter -->
 
-
-
-    <script data-main="js/main" src="//cdnjs.cloudflare.com/ajax/libs/require.js/2.1.15/require.min.js"></script>
-
-    <div id="torrent-scanner-popup" style="display: none;"></div>
-    <script type="text/javascript" id="">(function (b, c, a) { (c[a] = c[a] || []).push(function () { try { c.yaCounter21880642 = new Ya.Metrika({ id: 21880642, webvisor: !0, clickmap: !0, trackLinks: !0, accurateTrackBounce: !0 }) } catch (f) { } }); var e = b.getElementsByTagName("script")[0], d = b.createElement("script"); a = function () { e.parentNode.insertBefore(d, e) }; d.type = "text/javascript"; d.async = !0; d.src = ("https:" == b.location.protocol ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js"; "[object Opera]" == c.opera ? b.addEventListener("DOMContentLoaded", a, !1) : a() })(document,
-            window, "yandex_metrika_callbacks");</script>
-    <noscript>
-        <div><img src="//mc.yandex.ru/watch/21880642" style="position:absolute; left:-9999px;" alt=""></div>
-    </noscript>
-    <iframe src="https://hst-api.wialon.com/wialon/post.html" style="display: none;"></iframe><iframe
-        src="https://hst-api.wialon.eu/wialon/post.html" style="display: none;"></iframe>
-    <div id="ui-datepicker-div" class="ui-datepicker ui-widget ui-widget-content ui-helper-clearfix ui-corner-all">
-        <div class="ui-datepicker-header ui-widget-header ui-helper-clearfix ui-corner-all"><a
-                class="ui-datepicker-prev ui-corner-all" data-handler="prev" data-event="click" title="◄"><span
-                    class="ui-icon ui-icon-circle-triangle-w">◄</span></a><a
-                class="ui-datepicker-next ui-corner-all ui-state-disabled" title="►"><span
-                    class="ui-icon ui-icon-circle-triangle-e">►</span></a>
-            <div class="ui-datepicker-title"><span class="ui-datepicker-month">July</span>&nbsp;<span
-                    class="ui-datepicker-year">2024</span></div>
-        </div>
-        <table class="ui-datepicker-calendar">
-            <thead>
-                <tr>
-                    <th><span title="Monday">Mo</span></th>
-                    <th><span title="Tuesday">Tu</span></th>
-                    <th><span title="Wednesday">We</span></th>
-                    <th><span title="Thursday">Th</span></th>
-                    <th><span title="Friday">Fr</span></th>
-                    <th class="ui-datepicker-week-end"><span title="Saturday">Sa</span></th>
-                    <th class="ui-datepicker-week-end"><span title="Sunday">Su</span></th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td class=" " data-handler="selectDay" data-event="click" data-month="6" data-year="2024"><a
-                            class="ui-state-default" href="#">1</a></td>
-                    <td class=" " data-handler="selectDay" data-event="click" data-month="6" data-year="2024"><a
-                            class="ui-state-default" href="#">2</a></td>
-                    <td class=" " data-handler="selectDay" data-event="click" data-month="6" data-year="2024"><a
-                            class="ui-state-default" href="#">3</a></td>
-                    <td class=" " data-handler="selectDay" data-event="click" data-month="6" data-year="2024"><a
-                            class="ui-state-default" href="#">4</a></td>
-                    <td class=" " data-handler="selectDay" data-event="click" data-month="6" data-year="2024"><a
-                            class="ui-state-default" href="#">5</a></td>
-                    <td class=" ui-datepicker-week-end " data-handler="selectDay" data-event="click" data-month="6"
-                        data-year="2024"><a class="ui-state-default" href="#">6</a></td>
-                    <td class=" ui-datepicker-week-end " data-handler="selectDay" data-event="click" data-month="6"
-                        data-year="2024"><a class="ui-state-default" href="#">7</a></td>
-                </tr>
-                <tr>
-                    <td class=" " data-handler="selectDay" data-event="click" data-month="6" data-year="2024"><a
-                            class="ui-state-default" href="#">8</a></td>
-                    <td class=" " data-handler="selectDay" data-event="click" data-month="6" data-year="2024"><a
-                            class="ui-state-default" href="#">9</a></td>
-                    <td class=" " data-handler="selectDay" data-event="click" data-month="6" data-year="2024"><a
-                            class="ui-state-default" href="#">10</a></td>
-                    <td class=" " data-handler="selectDay" data-event="click" data-month="6" data-year="2024"><a
-                            class="ui-state-default" href="#">11</a></td>
-                    <td class=" " data-handler="selectDay" data-event="click" data-month="6" data-year="2024"><a
-                            class="ui-state-default" href="#">12</a></td>
-                    <td class=" ui-datepicker-week-end " data-handler="selectDay" data-event="click" data-month="6"
-                        data-year="2024"><a class="ui-state-default" href="#">13</a></td>
-                    <td class=" ui-datepicker-week-end " data-handler="selectDay" data-event="click" data-month="6"
-                        data-year="2024"><a class="ui-state-default" href="#">14</a></td>
-                </tr>
-                <tr>
-                    <td class=" " data-handler="selectDay" data-event="click" data-month="6" data-year="2024"><a
-                            class="ui-state-default" href="#">15</a></td>
-                    <td class=" " data-handler="selectDay" data-event="click" data-month="6" data-year="2024"><a
-                            class="ui-state-default" href="#">16</a></td>
-                    <td class=" " data-handler="selectDay" data-event="click" data-month="6" data-year="2024"><a
-                            class="ui-state-default" href="#">17</a></td>
-                    <td class=" " data-handler="selectDay" data-event="click" data-month="6" data-year="2024"><a
-                            class="ui-state-default" href="#">18</a></td>
-                    <td class=" " data-handler="selectDay" data-event="click" data-month="6" data-year="2024"><a
-                            class="ui-state-default" href="#">19</a></td>
-                    <td class=" ui-datepicker-week-end " data-handler="selectDay" data-event="click" data-month="6"
-                        data-year="2024"><a class="ui-state-default" href="#">20</a></td>
-                    <td class=" ui-datepicker-week-end " data-handler="selectDay" data-event="click" data-month="6"
-                        data-year="2024"><a class="ui-state-default" href="#">21</a></td>
-                </tr>
-                <tr>
-                    <td class=" " data-handler="selectDay" data-event="click" data-month="6" data-year="2024"><a
-                            class="ui-state-default" href="#">22</a></td>
-                    <td class=" " data-handler="selectDay" data-event="click" data-month="6" data-year="2024"><a
-                            class="ui-state-default" href="#">23</a></td>
-                    <td class=" " data-handler="selectDay" data-event="click" data-month="6" data-year="2024"><a
-                            class="ui-state-default" href="#">24</a></td>
-                    <td class=" " data-handler="selectDay" data-event="click" data-month="6" data-year="2024"><a
-                            class="ui-state-default" href="#">25</a></td>
-                    <td class=" ui-datepicker-days-cell-over  ui-datepicker-current-day" data-handler="selectDay"
-                        data-event="click" data-month="6" data-year="2024"><a
-                            class="ui-state-default ui-state-active ui-state-hover" href="#">26</a></td>
-                    <td class=" ui-datepicker-week-end  ui-datepicker-today" data-handler="selectDay" data-event="click"
-                        data-month="6" data-year="2024"><a class="ui-state-default ui-state-highlight" href="#">27</a>
-                    </td>
-                    <td class=" ui-datepicker-week-end ui-datepicker-unselectable ui-state-disabled "><span
-                            class="ui-state-default">28</span></td>
-                </tr>
-                <tr>
-                    <td class=" ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">29</span>
-                    </td>
-                    <td class=" ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">30</span>
-                    </td>
-                    <td class=" ui-datepicker-unselectable ui-state-disabled "><span class="ui-state-default">31</span>
-                    </td>
-                    <td class=" ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled">&nbsp;</td>
-                    <td class=" ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled">&nbsp;</td>
-                    <td
-                        class=" ui-datepicker-week-end ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled">
-                        &nbsp;</td>
-                    <td
-                        class=" ui-datepicker-week-end ui-datepicker-other-month ui-datepicker-unselectable ui-state-disabled">
-                        &nbsp;</td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
 </body>
 <!-- <script data-main="js/main" src="//cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script> -->
+<script data-main="js/main" src="//cdnjs.cloudflare.com/ajax/libs/require.js/2.1.15/require.min.js"></script>
 
 </html>
